@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Header from "./components/Header";
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -7,17 +7,20 @@ import Works from "./pages/Works";
 import Contact from "./pages/Contact";
 
 function App() {
-  const [buttonClicked, setButtonClicked] = useState('Home')
-
+  const homeRef = useRef()
+  const aboutRef = useRef()
+  const resumeRef = useRef()
+  const worksRef = useRef()
+  const contactRef = useRef()
   return (
-    <div className="h-screen pl-52 pr-44 pt-14 bg-gradient-to-r from-purple-300 to-pink-300">
-      <Header setButtonClicked = {setButtonClicked}/>
-      <div className="mt-20">
-      {buttonClicked === 'Home' && <Home/>}
-      {buttonClicked === 'About' && <About/>}
-      {buttonClicked === 'Resume' && <Resume/>}
-      {buttonClicked === 'Works' && <Works/>}
-      {buttonClicked === 'Contact' && <Contact/>}
+    <div className="h-full pl-32 pr-32 pt-14 bg-gradient-to-r from-purple-300 to-pink-300">
+      <Header homeRef={homeRef} aboutRef={aboutRef} resumeRef={resumeRef} worksRef={worksRef} contactRef={contactRef} />
+      <div className="mt-12">
+      <Home ref={homeRef}/>
+      <About ref={aboutRef}/>
+      <Resume ref={resumeRef}/>
+      <Works ref={worksRef}/>
+      <Contact ref={contactRef}/>
       </div>
     </div>
   );

@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Home = () => {
+const Home = React.forwardRef((props, ref) => {
   return (
-    <div className="flex flex-col p-8 items-center">
+    <div className="flex flex-col items-center" ref={ref}>
       <div className="px-1 m-5">
         <img
-          alt="name"
+          alt="profile"
           src="/profile.jpg"
           className="'h-72 w-72 rounded-full border-2'" />
       </div>
@@ -23,6 +23,6 @@ const Home = () => {
       </div>
     </div>
   )
-}
+})
 
 export default Home
