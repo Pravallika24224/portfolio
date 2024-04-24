@@ -1,4 +1,5 @@
 import React from 'react'
+import Profile from '../assets/profile.jpg'
 
 const Home = React.forwardRef((props, ref) => {
   return (
@@ -6,7 +7,7 @@ const Home = React.forwardRef((props, ref) => {
       <div className="px-1 m-5">
         <img
           alt="profile"
-          src="/profile.jpg"
+          src={Profile}
           className="'h-72 w-72 rounded-full border-2'" />
       </div>
       <div className='text-center'>
