@@ -19,28 +19,20 @@ const Skills = () => {
     <div>
       <div className="w-64 my-4 text-2xl font-semibold font-robo bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">Skills & Knowledges</div>
       <div className='flex flex-wrap justify-center text-center'>
-        {/* <div className='flex flex-row justify-center'> */}
           <IconsWithText icon={html} text="HTML" />
           <IconsWithText icon={css} text="CSS" />
           <IconsWithText icon={javascript} text="Javascript" />
           <IconsWithText icon={react_js} text="ReactJs" />
-        {/* </div> */}
-        {/* <div className='flex flex-row justify-center'> */}
           <IconsWithText icon={mongodb} text="MongoDB" />
           <IconsWithText icon={node_js} text="NodeJs" />
           <IconsWithText icon={Next_js} text="NextJs" />
           <IconsWithText icon={express_js} text="ExpressJs" />
-        {/* </div> */}
-        {/* <div className='flex flex-row justify-center'> */}
           <IconsWithText icon={reduxToolKit} text="Redux Toolkit" />
           <IconsWithText icon={graphql} text="Graphql" />
           <IconsWithText icon={tailwind} text="Tailwindcss" />
           <IconsWithText icon={Mui} text="MUI" />
-        {/* </div> */}
-        {/* <div className='flex flex-row justify-center'> */}
           <IconsWithText icon={antD} text="AntD" />
           <IconsWithText icon={git} text="Git" />
-        {/* </div> */}
       </div>
     </div>
   )
