@@ -26,7 +26,6 @@ const About = React.forwardRef((props, ref) => {
           Whether you're looking to build a cutting-edge web application or enhance an existing project, I'm ready to bring your vision to life with the power of React.
         </p>
         <div className="w-36 my-2 text-3xl font-semibold font-robo bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">What I do!</div>
-        {/* <div className='flex flex-col'> */}
         <div className='grid grid-cols-1 gap-4 xl:grid-cols-3 md:grid-cols-2 sm:grid-cols-1'>
           <div className="rounded-md overflow-hidden shadow-lg">
             <WhatIDoCard
@@ -49,8 +48,6 @@ const About = React.forwardRef((props, ref) => {
               heading='Server-Side Development'
               content='Building server-side logic and APIs using Node.js and Express.js, including handling HTTP requests, authentication, authorization, and business logic implementation.' />
           </div>
-          {/* </div> */}
-          {/* <div className='flex flex-row'> */}
           <div className=" rounded-md overflow-hidden shadow-lg">
             <WhatIDoCard
               bgColor='blue-100'
@@ -72,8 +69,6 @@ const About = React.forwardRef((props, ref) => {
               heading='State Management'
               content='Implementing state management solutions for React applications, such as Redux or Context API, to manage complex application state and data flow.' />
           </div>
-          {/* </div> */}
-          {/* <div className='flex flex-row'> */}
           <div className=" rounded-md overflow-hidden shadow-lg">
             <WhatIDoCard
               bgColor='amber-100'
@@ -96,7 +91,6 @@ const About = React.forwardRef((props, ref) => {
               content='Identifying and optimizing performance bottlenecks in both front-end and back-end code to improve the overall speed and efficiency of the application.' />
           </div>
         </div>
-        {/* </div> */}
       </div>
     </div>
   )

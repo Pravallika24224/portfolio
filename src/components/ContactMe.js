@@ -27,8 +27,8 @@ const ContactMe = () => {
     }
   };
   return (
-    <div className='w-full xl:w-2/5 lg:w-1/2 sm:w-full'>
-      <div className="rounded-md overflow-hidden shadow-lg bg-orange-100 mr-6 my-4">
+    <div className='w-full xl:w-2/5 lg:w-1/2 sm:w-full xl:pr-6 lg:pr-4'>
+      <div className="rounded-md overflow-hidden shadow-lg bg-orange-100 my-4">
         <div className='flex m-2'>
           <img
             className="h-10 w-10"
@@ -39,7 +39,7 @@ const ContactMe = () => {
           </div>
         </div>
       </div>
-      <div className="rounded-md overflow-hidden shadow-lg bg-cyan-100 mr-6 my-4">
+      <div className="rounded-md overflow-hidden shadow-lg bg-cyan-100 my-4">
         <div className='flex m-2'>
           <img
             className="h-10 w-10"
@@ -50,7 +50,7 @@ const ContactMe = () => {
           </div>
         </div>
       </div>
-      <div className="rounded-md overflow-hidden shadow-lg bg-red-200 mr-6 my-4">
+      <div className="rounded-md overflow-hidden shadow-lg bg-red-200 my-4">
         <div className='flex m-2'>
           <img
             className="h-10 w-10"
@@ -64,7 +64,7 @@ const ContactMe = () => {
           </div>
         </div>
       </div>
-      <div className="rounded-md overflow-hidden shadow-lg bg-green-100 mr-6 my-4">
+      <div className="rounded-md overflow-hidden shadow-lg bg-green-100 my-4">
         <div className='flex m-2'>
           <img
             className="h-10 w-10"
