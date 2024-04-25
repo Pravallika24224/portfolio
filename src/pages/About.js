@@ -36,14 +36,14 @@ const About = React.forwardRef((props, ref) => {
           </div>
           <div className="rounded-md overflow-hidden shadow-lg">
             <WhatIDoCard
-              bgColor='slate-200'
+              bgColor='green-100'
               image={database}
               heading='Database Design and Management'
               content='Designing database schemas, creating models, and implementing CRUD (Create, Read, Update, Delete) operations using MongoDB, a NoSQL database.' />
           </div>
           <div className="rounded-md overflow-hidden shadow-lg">
             <WhatIDoCard
-              bgColor='pink-100'
+              bgColor='cyan-100'
               image={serverside}
               heading='Server-Side Development'
               content='Building server-side logic and APIs using Node.js and Express.js, including handling HTTP requests, authentication, authorization, and business logic implementation.' />
@@ -71,14 +71,14 @@ const About = React.forwardRef((props, ref) => {
           </div>
           <div className=" rounded-md overflow-hidden shadow-lg">
             <WhatIDoCard
-              bgColor='amber-100'
+              bgColor='red-200'
               image={integration}
               heading='Integration with Third-Party Services'
               content='Integrating third-party services and APIs (e.g., payment gateways, social media APIs) into the application as needed.' />
           </div>
           <div className=" rounded-md overflow-hidden shadow-lg">
             <WhatIDoCard
-              bgColor='fuchsia-200'
+              bgColor='orange-100'
               image={debugging}
               heading='Testing and Debugging'
               content='Writing unit tests, integration tests, and end-to-end tests to ensure the reliability and correctness of the application code, and debugging issues as they arise.' />
