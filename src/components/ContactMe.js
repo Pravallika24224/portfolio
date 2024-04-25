@@ -27,7 +27,7 @@ const ContactMe = () => {
     }
   };
   return (
-    <div className='w-2/5'>
+    <div className='w-full xl:w-2/5 lg:w-1/2 sm:w-full'>
       <div className="rounded-md overflow-hidden shadow-lg bg-orange-100 mr-6 my-4">
         <div className='flex m-2'>
           <img
@@ -59,7 +59,7 @@ const ContactMe = () => {
             <p className='text-l font-bold font-robo bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent w-12'>Phone</p>
             <CopyToClipboard text="+91 9347945530" onCopy={onCopyHandler}>
               <p className='text-gray-700 text-base'>+91 9347945530</p>
-            </CopyToClipboard><br/>
+            </CopyToClipboard>
             {isCopied && <div className="bg-green-100 border border-green-400 text-green-700 px-2 py-1 rounded relative">Mobile Number copied to clipboard!</div>}
           </div>
         </div>
@@ -73,7 +73,7 @@ const ContactMe = () => {
             <p className='text-l font-bold font-robo bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent w-10'>Mail</p>
             <CopyToClipboard text="pothireddy.pravallika10@gmail.com" onCopy={onMailCopyHandler}>
               <p className='text-gray-700 text-base'>pothireddy.pravallika10@gmail.com</p>
-            </CopyToClipboard><br/>
+            </CopyToClipboard>
             {isMailCopied && <div className="bg-green-100 border border-green-400 text-green-700 px-2 py-1 rounded relative">MailID copied to clipboard!</div>}
           </div>
         </div>

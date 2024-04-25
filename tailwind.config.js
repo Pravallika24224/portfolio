@@ -1,30 +1,18 @@
-module.exports = {
+/** @type {import('tailwindcss').Config} */
+export default {
   content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
+    "./index.html",
+    "./src/components/**/*{js,ts,jsx,tsx}",
+    "./src/pages/**/*{js,ts,jsx,tsx}",
+    "./src/reuseableComponents/**/*{js,ts,jsx,tsx}",
+    "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    theme: {
-      fontFamily: {
-        robo: ["Roboto Slab", "serif"]
-      },
-      screens: {
-        'sm': '640px',
-        // => @media (min-width: 640px) { ... }
-  
-        'md': '768px',
-        // => @media (min-width: 768px) { ... }
-  
-        'lg': '1024px',
-        // => @media (min-width: 1024px) { ... }
-  
-        'xl': '1280px',
-        // => @media (min-width: 1280px) { ... }
-  
-        '2xl': '1536px',
-        // => @media (min-width: 1536px) { ... }
-      }
+    fontFamily: {
+      robo: ["Roboto Slab", "serif"]
     },
     extend: {},
   },
   plugins: [],
 }
+

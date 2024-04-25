@@ -10,7 +10,7 @@ const Contact = React.forwardRef((props, ref) => {
           <div className="w-36 text-4xl font-bold font-robo bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">Contact</div>
           <div className="my-6 bg-gradient-to-r from-purple-400 to-pink-400 h-0.5 w-1/6 rounded-full"></div>
         </div>
-        <div className='flex flex-row'>
+        <div className='flex flex-wrap'>
           <ContactMe/>
           <ContactForm />
         </div>

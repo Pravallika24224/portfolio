@@ -1,8 +1,8 @@
 import React from 'react'
 
-const WhatIDoCard = ({image, heading, content}) => {
+const WhatIDoCard = ({bgColor, image, heading, content}) => {
   return (
-    <div className='flex m-2'>
+    <div className={`bg-${bgColor} flex p-2 h-full w-full`}>
       <img
         className="h-12 w-12"
         src={image} alt={`${image}`} />

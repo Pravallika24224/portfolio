@@ -34,8 +34,8 @@ const ContactForm = () => {
   })
 
   return (
-    <div className="w-3/5">
-      <form className="bg-gradient-to-r from-purple-100 to-pink-100 shadow-lg rounded px-8 pt-6 pb-8 m-4" onSubmit={handleSubmit}>
+    <div className="w-full xl:w-3/5 lg:w-1/2 sm:w-full">
+      <form className="bg-gradient-to-r from-purple-100 to-pink-100 shadow-lg rounded px-8 pt-6 pb-8 my-4 mr-6" onSubmit={handleSubmit}>
         <TextField
           sx={{ marginBottom: '10px' }}
           label={'Name'}

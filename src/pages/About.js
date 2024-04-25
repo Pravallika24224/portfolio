@@ -15,8 +15,8 @@ const About = React.forwardRef((props, ref) => {
     <div className=" rounded-md overflow-hidden shadow-lg bg-white m-4" ref={ref}>
       <div className="px-6 py-4">
         <div className='flex mb-2'>
-        <div className="w-44 text-4xl font-bold font-robo bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">About Me</div>
-        <div className="my-6 bg-gradient-to-r from-purple-400 to-pink-400 h-0.5 w-1/6 rounded-full"></div>
+          <div className="w-44 text-4xl font-bold font-robo bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">About Me</div>
+          <div className="my-6 bg-gradient-to-r from-purple-400 to-pink-400 h-0.5 w-1/6 rounded-full"></div>
         </div>
         <p className="text-gray-700 text-base">
           Hello there! I'm Pravallika, a passionate React developer on a mission to create engaging and user-friendly web applications.
@@ -27,61 +27,70 @@ const About = React.forwardRef((props, ref) => {
         </p>
         <div className="w-36 my-2 text-3xl font-semibold font-robo bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">What I do!</div>
         {/* <div className='flex flex-col'> */}
-        <div className='flex flex-row'>
-          <div className="basis-1/3 rounded-md overflow-hidden shadow-lg bg-orange-100 mr-6 my-2">
+        <div className='grid grid-cols-1 gap-4 xl:grid-cols-3 md:grid-cols-2 sm:grid-cols-1'>
+          <div className="rounded-md overflow-hidden shadow-lg">
             <WhatIDoCard
+              bgColor='orange-100'
               image={fullstackImage}
               heading='Full-Stack Development'
               content='Developing both front-end and back-end components of web applications using the MERN stack technologies.' />
           </div>
-          <div className="basis-1/3 rounded-md overflow-hidden shadow-lg bg-slate-200 mr-6 my-2">
+          <div className="rounded-md overflow-hidden shadow-lg">
             <WhatIDoCard
+              bgColor='slate-200'
               image={database}
               heading='Database Design and Management'
               content='Designing database schemas, creating models, and implementing CRUD (Create, Read, Update, Delete) operations using MongoDB, a NoSQL database.' />
           </div>
-          <div className="basis-1/3 rounded-md overflow-hidden shadow-lg bg-pink-100 my-2">
+          <div className="rounded-md overflow-hidden shadow-lg">
             <WhatIDoCard
+              bgColor='pink-100'
               image={serverside}
               heading='Server-Side Development'
               content='Building server-side logic and APIs using Node.js and Express.js, including handling HTTP requests, authentication, authorization, and business logic implementation.' />
           </div>
-        </div>
-        <div className='flex flex-row'>
-          <div className="basis-1/3 rounded-md overflow-hidden shadow-lg bg-blue-100 mr-6 my-2">
+          {/* </div> */}
+          {/* <div className='flex flex-row'> */}
+          <div className=" rounded-md overflow-hidden shadow-lg">
             <WhatIDoCard
+              bgColor='blue-100'
               image={restApi}
               heading='RESTful API Development'
               content='Designing and implementing RESTful APIs to facilitate communication between the front-end and back-end components of the application, using Express.js on the server side.' />
           </div>
-          <div className="basis-1/3 rounded-md overflow-hidden shadow-lg bg-red-200 mr-6 my-2">
+          <div className=" rounded-md overflow-hidden shadow-lg">
             <WhatIDoCard
+              bgColor='red-200'
               image={authorisation}
               heading='Authentication and Authorization'
               content='Implementing authentication and authorization mechanisms such as JWT (JSON Web Tokens) or OAuth for securing APIs and managing user sessions.' />
           </div>
-          <div className="basis-1/3 rounded-md overflow-hidden shadow-lg bg-green-100 my-2">
+          <div className=" rounded-md overflow-hidden shadow-lg">
             <WhatIDoCard
+              bgColor='green-100'
               image={stateManagement}
               heading='State Management'
               content='Implementing state management solutions for React applications, such as Redux or Context API, to manage complex application state and data flow.' />
           </div>
-        </div>
-        <div className='flex flex-row'>
-          <div className="basis-1/3 rounded-md overflow-hidden shadow-lg bg-amber-100 mr-6 my-2">
+          {/* </div> */}
+          {/* <div className='flex flex-row'> */}
+          <div className=" rounded-md overflow-hidden shadow-lg">
             <WhatIDoCard
+              bgColor='amber-100'
               image={integration}
               heading='Integration with Third-Party Services'
               content='Integrating third-party services and APIs (e.g., payment gateways, social media APIs) into the application as needed.' />
           </div>
-          <div className="basis-1/3 rounded-md overflow-hidden shadow-lg bg-fuchsia-200 mr-6 my-2">
+          <div className=" rounded-md overflow-hidden shadow-lg">
             <WhatIDoCard
+              bgColor='fuchsia-200'
               image={debugging}
               heading='Testing and Debugging'
               content='Writing unit tests, integration tests, and end-to-end tests to ensure the reliability and correctness of the application code, and debugging issues as they arise.' />
           </div>
-          <div className="basis-1/3 rounded-md overflow-hidden shadow-lg bg-cyan-100 my-2">
+          <div className=" rounded-md overflow-hidden shadow-lg">
             <WhatIDoCard
+              bgColor='cyan-100'
               image={performance}
               heading='Performance Optimization'
               content='Identifying and optimizing performance bottlenecks in both front-end and back-end code to improve the overall speed and efficiency of the application.' />

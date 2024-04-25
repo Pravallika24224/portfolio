@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useRef } from "react";
 import Header from "./components/Header";
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -13,7 +13,7 @@ function App() {
   const worksRef = useRef()
   const contactRef = useRef()
   return (
-    <div className="h-full pl-32 pr-32 pt-14 bg-gradient-to-r from-purple-300 to-pink-300">
+    <div className="h-full pt-14 bg-gradient-to-r from-purple-300 to-pink-300 2xl:px-36 xl:px-24 lg:px-14 md:px-14 sm:px-6">
       <Header homeRef={homeRef} aboutRef={aboutRef} resumeRef={resumeRef} worksRef={worksRef} contactRef={contactRef} />
       <div className="mt-12">
       <Home ref={homeRef}/>
