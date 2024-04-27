@@ -34,8 +34,8 @@ const ContactMe = () => {
             className="h-10 w-10"
             src={linkedIn} alt={`${linkedIn}`} />
           <div className='pl-2 items-center'>
-            <p className='text-l font-bold font-robo bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent w-16'>LinkedIn</p>
-            <a href='https://www.linkedin.com/in/pravallika-pothireddy-219542228/' target="_blank">https://www.linkedin.com/in/pravallika-pothireddy-219542228/</a>
+            <p className='font-bold font-robo bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent w-16'>LinkedIn</p>
+            <a className='text-sm md:text-base' href='https://www.linkedin.com/in/pravallika-pothireddy-219542228/' target="_blank">https://www.linkedin.com/in/pravallika-pothireddy-219542228/</a>
           </div>
         </div>
       </div>
@@ -45,8 +45,8 @@ const ContactMe = () => {
             className="h-10 w-10"
             src={gitHub} alt={`${gitHub}`} />
           <div className='pl-2 items-center'>
-            <p className='text-l font-bold font-robo bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent w-14'>GitHub</p>
-            <a href='https://github.com/Pravallika24224?tab=repositories' target="_blank">https://github.com/Pravallika24224?tab=repositories</a>
+            <p className='font-bold font-robo bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent w-14'>GitHub</p>
+            <a className='text-sm md:text-base' href='https://github.com/Pravallika24224?tab=repositories' target="_blank">https://github.com/Pravallika24224</a>
           </div>
         </div>
       </div>
@@ -56,11 +56,11 @@ const ContactMe = () => {
             className="h-10 w-10"
             src={phone} alt={`${phone}`} />
           <div className='pl-2 items-center'>
-            <p className='text-l font-bold font-robo bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent w-12'>Phone</p>
+            <p className='font-bold font-robo bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent w-12'>Phone</p>
             <CopyToClipboard text="+91 9347945530" onCopy={onCopyHandler}>
-              <p className='text-gray-700 text-base'>+91 9347945530</p>
+              <p className='text-gray-700 text-sm md:text-base'>+91 9347945530</p>
             </CopyToClipboard>
-            {isCopied && <div className="bg-green-100 border border-green-400 text-green-700 px-2 py-1 rounded relative">Mobile Number copied to clipboard!</div>}
+            {isCopied && <div className="bg-green-100 border border-green-400 text-green-700 px-2 py-1 rounded relative text-sm">Mobile Number copied to clipboard!</div>}
           </div>
         </div>
       </div>
@@ -70,11 +70,11 @@ const ContactMe = () => {
             className="h-10 w-10"
             src={gMail} alt={`${gMail}`} />
           <div className='pl-2 items-center'>
-            <p className='text-l font-bold font-robo bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent w-10'>Mail</p>
+            <p className='font-bold font-robo bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent w-10'>Mail</p>
             <CopyToClipboard text="pothireddy.pravallika10@gmail.com" onCopy={onMailCopyHandler}>
-              <p className='text-gray-700 text-base'>pothireddy.pravallika10@gmail.com</p>
+              <p className='text-gray-700 text-sm md:text-base'>pothireddy.pravallika10@gmail.com</p>
             </CopyToClipboard>
-            {isMailCopied && <div className="bg-green-100 border border-green-400 text-green-700 px-2 py-1 rounded relative">MailID copied to clipboard!</div>}
+            {isMailCopied && <div className="bg-green-100 border border-green-400 text-green-700 px-2 py-1 rounded relative text-sm">MailID copied to clipboard!</div>}
           </div>
         </div>
       </div>
