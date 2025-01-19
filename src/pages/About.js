@@ -71,7 +71,7 @@ const About = React.forwardRef((props, ref) => {
           </div>
           <div className=" rounded-md overflow-hidden shadow-lg">
             <WhatIDoCard
-              bgColor='red-200'
+              bgColor='blue-100'
               image={integration}
               heading='Integration with Third-Party Services'
               content='Integrating third-party services and APIs (e.g., payment gateways, social media APIs) into the application as needed.' />

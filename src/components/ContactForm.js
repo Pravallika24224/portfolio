@@ -35,7 +35,7 @@ const ContactForm = () => {
 
   return (
     <div className="w-full xl:w-3/5 lg:w-1/2 sm:w-full">
-      <form className="bg-gradient-to-r from-purple-100 to-pink-100 shadow-lg rounded px-8 pt-6 pb-8 my-4" onSubmit={handleSubmit}>
+      <form className="bg-gray-50 shadow-lg rounded px-8 pt-6 pb-8 my-4" onSubmit={handleSubmit}>
         <TextField
           sx={{ marginBottom: '10px' }}
           label={'Name'}
@@ -69,9 +69,8 @@ const ContactForm = () => {
           error={touched.message && Boolean(errors.message)}
           helperText={touched.message && errors.message}
         />
-        <Button sx={{color: "white", width: 100}} type='submit'
-                    className="flex justify-between items-center bg-gradient-to-r from-purple-500 to-pink-500 focus:outline-none font-medium rounded-md text-sm px-5 py-2.5 me-4 mt-4 mb-2 mx-auto">
-          {submitting ? <CircularProgress size={20} /> : 'Submit'}
+        <Button sx={{color: "rgb(185 28 28)", border: '2px solid rgb(185 28 28)', width: 100, fontWeight: '600'}} type='submit'>
+           {submitting ? <CircularProgress size={20} /> : 'Submit'}
         </Button>
       </form>
     </div>
